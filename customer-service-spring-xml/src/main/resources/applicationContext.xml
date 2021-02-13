@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- define bean customer repository -->
+	
+	<bean id="customerRepository" class="com.simplilearn.workshop.repository.CustomerRepository" />
+
+	<!-- define bean customer service -->
+	<bean id="customerService" class="com.simplilearn.workshop.services.CustomerService">
+		<!--  invoke a setter method(DI) in CustomerServie class -->
+		<property name="customerRepository" ref="customerRepository"/>
+		
+		<!-- <constructor-arg/> -->
+	</bean>
+
+</beans>
