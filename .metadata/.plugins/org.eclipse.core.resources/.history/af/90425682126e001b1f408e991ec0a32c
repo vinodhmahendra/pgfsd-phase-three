@@ -1,0 +1,10 @@
+package com.simplilearn.workshop.services;
+
+import com.simplilearn.workshop.repository.CustomerRepository;
+
+public class CustomerService {
+	
+	// depends on CustomerRepository
+	private CustomerRepository customerRepository = new CustomerRepository();
+
+}

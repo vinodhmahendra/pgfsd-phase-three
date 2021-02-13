@@ -1,0 +1,16 @@
+package com.simplilearn.workshop.domain;
+
+public class Customer {
+	
+	private String id;
+	private String name;
+	private String phone;
+	private String email;
+	
+	public Customer() {
+		super();
+	}
+	
+	
+
+}

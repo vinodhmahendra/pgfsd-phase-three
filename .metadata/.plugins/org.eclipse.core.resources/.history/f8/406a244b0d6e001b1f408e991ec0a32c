@@ -1,0 +1,13 @@
+package com.simplilearn.workshop.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.simplilearn.workshop.domain.Customer;
+
+public class CustomerRepository {
+
+	private List<Customer> list_of_customers = new ArrayList<Customer>() {{
+		
+	}};
+}

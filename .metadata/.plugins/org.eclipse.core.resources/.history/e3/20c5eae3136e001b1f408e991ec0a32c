@@ -1,0 +1,19 @@
+package com.simplilearn.workshop;
+
+import java.util.List;
+
+import com.simplilearn.workshop.domain.Customer;
+import com.simplilearn.workshop.services.CustomerService;
+
+public class CustomerServiceApplication {
+
+	public static void main(String[] args) {
+	
+		CustomerService customerService = new CustomerService();
+		
+		// find all customer
+		List<Customer> customers = customerService.retreveAllCustomers();
+
+	}
+
+}

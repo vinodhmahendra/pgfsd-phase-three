@@ -1,0 +1,15 @@
+package com.simplilearn.workshop;
+
+import com.simplilearn.workshop.services.CustomerService;
+
+public class CustomerServiceApplication {
+
+	public static void main(String[] args) {
+	
+		CustomerService customerService = new CustomerService();
+		
+		
+
+	}
+
+}

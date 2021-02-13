@@ -1,0 +1,22 @@
+package com.simplilearn.workshop.domain;
+
+public class Customer {
+	
+	private String id;
+	private String name;
+	private String phone;
+	private String email;
+	
+	public Customer() {
+		super(); // invoke a constructor in  Object class
+ 	}
+	
+	public Customer(String name,String phone, String email) {
+		this.name = name;
+		this.phone = phone;
+		this.email = email;
+	}
+	
+	
+
+}

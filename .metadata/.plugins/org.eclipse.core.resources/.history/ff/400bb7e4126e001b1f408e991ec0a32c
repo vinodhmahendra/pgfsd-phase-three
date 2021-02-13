@@ -1,0 +1,19 @@
+package com.simplilearn.workshop.services;
+
+import java.util.List;
+
+import com.simplilearn.workshop.domain.Customer;
+import com.simplilearn.workshop.repository.CustomerRepository;
+
+public class CustomerService {
+	
+	// depends on CustomerRepository
+	private CustomerRepository customerRepository = new CustomerRepository();
+	
+	// find all customers
+	public List<Customer> retreveAllCustomers(){
+		//authentication
+		return customerRepository.findAll();
+	}
+
+}
